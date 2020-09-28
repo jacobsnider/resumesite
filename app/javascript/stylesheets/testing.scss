@@ -1,0 +1,9 @@
+.test {
+    @extend .text-danger,
+    .mx-auto,
+    .d-block;
+    z-index: 1000;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
