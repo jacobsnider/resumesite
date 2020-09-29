@@ -1,0 +1,41 @@
+.navbar {
+    @extend .fixed-top;
+    display: block;
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        max-width: 20%;
+        height: 100%;
+        z-index: 1;
+    }
+}
+
+.navbar-brand {
+    @extend .mx-auto,
+    .d-block,
+    .text-center,
+    .text-lg-left;
+}
+
+.navbar-toggler {
+    @extend .mx-auto,
+    .d-block,
+    .d-lg-none;
+}
+
+.navbar-expand-lg .navbar-nav {
+    @include media-breakpoint-up(lg) {
+        flex-direction: column;
+    }
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+.icon-div {
+    @extend .row;
+    justify-content: space-evenly;
+    @include media-breakpoint-up(lg) {
+        margin-right: 1rem;
+    }
+}

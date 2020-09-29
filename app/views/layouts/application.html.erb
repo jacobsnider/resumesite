@@ -4,14 +4,19 @@
     <title><%= yield :title %></title>       
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= render 'partials/navbar' %>
-    <%= yield %>
+    <div class="main-contentWrapper">
+      <div class="main-content">
+        <%= yield %>
+      </div>
+    </div>
     <i class="test fas fa-hand-middle-finger fa-3x"></i>    
     </body>
 </html>

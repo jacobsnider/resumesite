@@ -1,27 +1,27 @@
-
-
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light row">
-    <div class="container">
-        <%= link_to root_path do %>
-            Home Logo
-        <% end %>
-        <span class="pointer onclick col-12 d-lg-none;" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            Toggler        
-        </span> 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav text-center">
-                <%= link_to "Home", root_path, class: "nav-item nav-link d-lg-none"%>
-                <%= link_to "Resume", resume_path, class: "nav-item nav-link"%>
-                <%= link_to "Graphic Design", graphicdesign_path, class: "nav-item nav-link"%>
-                <%= link_to "Coding", coding_path, class: "nav-item nav-link"%>
-                <%= link_to "Film", film_path, class: "nav-item nav-link"%>
-                <%= link_to "Music", music_path, class: "nav-item nav-link"%>
-                <%= link_to "Writing", writing_path, class: "nav-item nav-link"%>
-                <%= link_to "Github", "https://github.com/jacobsnider", :target => "_blank", class: "nav-item nav-link" %>
-                <%= link_to "Linked In", "https://www.linkedin.com/in/jake-snider/", :target => "_blank", class: "nav-item nav-link" %>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to "Home", root_path, class: "navbar-brand"%>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav text-center text-lg-left">
+        <%= link_to "Home", root_path, class: "nav-item nav-link d-lg-none"%>
+        <%= link_to "Resume", resume_path, class: "nav-item nav-link"%>
+        <%= link_to "Graphic Design", graphicdesign_path, class: "nav-item nav-link"%>
+        <%= link_to "Coding", coding_path, class: "nav-item nav-link"%>
+        <%= link_to "Film", film_path, class: "nav-item nav-link"%>
+        <%= link_to "Music", music_path, class: "nav-item nav-link"%>
+        <%= link_to "Writing", writing_path, class: "nav-item nav-link"%>
+        <div class="icon-div">
+            <%= link_to "https://github.com/jacobsnider", :target => "_blank", class: "nav-icon nav-item nav-link" do %>
+                <i class="fab fa-github-square fa-2x"></i>
+            <% end %>
+            <%= link_to "https://www.linkedin.com/in/jake-snider/", :target => "_blank", class: "nav-icon nav-item nav-link" do %>
+                <i class="fab fa-linkedin fa-2x"></i>
+            <% end %>
         </div>
     </div>
+  </div>
 </nav>
 <!-- /NAVBAR -->

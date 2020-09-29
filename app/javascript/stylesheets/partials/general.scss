@@ -1,0 +1,7 @@
+.main-content {
+    margin-top: 6rem;
+    @include media-breakpoint-up(lg) {
+        margin-top: 0;
+        margin-left: 17rem;
+    }
+}
